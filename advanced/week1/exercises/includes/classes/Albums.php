@@ -6,15 +6,15 @@
 
 class Albums
 {
-    public array $albuminfo = [];
+    public array $albumInfo = [];
 
     public function getAlbums(): array
     {
-        return $this->albuminfo;
+        return $this->albumInfo;
     }
 
-    public function addAlbums(array $value): void {
-        $this->albuminfo[] = new Albums($value['name'], $value['year'], $value['tracks'], $value['genre'], $value['artist']);
+    public function addAlbums(array $albumRaw): void {
+        $this->albumInfo[] = new Albums($albumRaw['id'], $albumRaw['name'], $albumRaw['year'], $albumRaw['tracks'], $albumRaw['genre'], $albumRaw['artist']);
     }
 
     /**
@@ -22,6 +22,6 @@ class Albums
      */
     public function getTotalAlbums(): int
     {
-        return count($this->albuminfo);
+        return count($this->albumInfo);
     }
 }

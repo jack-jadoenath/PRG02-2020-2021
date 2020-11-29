@@ -11,7 +11,7 @@
     <h1>Albums Advanced list</h1>
     <h1 style="color: red;">
     <?php
-        var_dump($albuminfo);
+        var_dump($albumInfo);
     ?>
     </h1>
 
@@ -19,11 +19,12 @@
         <span class="error"><?= $error; ?></span>
     <?php endif; ?>
 
-    <?php if (isset($albuminfo) && isset($totalAlbums)) : ?>
+    <?php if (isset($albumInfo) && isset($totalAlbums)) : ?>
         
         <table>
             <thead>
                 <tr>
+                    <th>#</th>
                     <th>Naam</th>
                     <th>Jaar</th>
                     <th>Nummers</th>
@@ -38,8 +39,9 @@
             </tfoot>
             <tbody>
 
-                <?php foreach ($albuminfo as $Album) : ?>
+                <?php foreach ($albumInfo as $Album) : ?>
                     <tr>
+                        <td><?= $Album->id; ?></td>
                         <td><?= $Album->name; ?></td>
                         <td><?= $Album->year; ?></td>
                         <td><?= $Album->tracks; ?></td>

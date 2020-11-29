@@ -1,8 +1,8 @@
 <?php
 require_once "settings.php";
 require_once "classes/Albums.php";
-require_once "classes/Artist.php";
-require_once "classes/Genre.php";
+//require_once "classes/Artist.php";
+//require_once "classes/Genre.php";
 
 try {
     //Load data & convert to PHP Arrays
