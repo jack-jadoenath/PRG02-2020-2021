@@ -1,9 +1,9 @@
-<?php namespace Advanced\Jack\Albums;
+<?php
 
 /**
  * Class MusicCollection
  */
-class MusicCollection extends Album
+class MusicCollection
 {
     private array $albums = [];
 

@@ -1,4 +1,4 @@
-<?php namespace Advanced\Jack\Albums;
+<?php namespace classes;
 
 
 class Genre

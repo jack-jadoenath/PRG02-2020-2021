@@ -3,6 +3,7 @@
 require_once "settings.php";
 require_once "classes/MusicCollection.php";
 require_once "classes/Album.php";
+require_once "classes/Genre.php";
 require_once "classes/MusicAlbums.php";
 
 //Set variable for errors

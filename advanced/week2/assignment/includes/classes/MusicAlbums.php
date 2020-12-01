@@ -1,5 +1,4 @@
-<?php namespace Advanced\Jack\Albums;
-
+<?php
 /**
  * Interface MusicAlbums
  */
